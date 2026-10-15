@@ -4,9 +4,9 @@
     "name": "GraphSAGE",
     "num_layers": 2,
     "in_dim": 1433,
-    "hidden_dim": 64,
+    "hidden_dim": 128,
     "out_dim": 7,
-    "dropout": 0.5
+    "dropout": 0.3
   },
   "feature_schema": {
     "feature_length": 1433,
@@ -23,9 +23,9 @@
     "6": "Theory"
   },
   "training": {
-    "seed": 42,
-    "learning_rate": 0.01,
-    "weight_decay": 0.0005,
-    "epochs_trained": 142
+    "seed": 123,
+    "learning_rate": 0.005,
+    "weight_decay": 0.0001,
+    "epochs_trained": 3
   }
 }
