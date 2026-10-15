@@ -25,8 +25,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # If application code changes, Docker reuses this cached layer without reinstalling dependencies
 COPY requirements.txt /app/
 
-# Line 7: Install Python dependencies from requirements.txt without caching wheels
-RUN pip install --no-cache-dir -r requirements.txt
+# Line 7: Install PyTorch CPU first (lightweight, avoids CUDA bloat) followed by requirements
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Line 8: Copy the source code directory (serving engine, pipelines, monitoring) into /app/src/
 COPY src/ /app/src/
