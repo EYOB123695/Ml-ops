@@ -1,7 +1,3 @@
-# ==============================================================================
-# DOCKERFILE FOR GNN MLOPS PRODUCTION SERVING ENGINE
-# ==============================================================================
-
 # Line 1: Use an official lightweight Debian-based Python 3.11 slim image
 # This minimizes container attack surface and keeps the image size under 500MB
 FROM python:3.11-slim
