@@ -1,0 +1,14 @@
+# Experiment 3: GCN Comparison Architecture
+experiment_name: "cora_mlops_experiments"
+run_name: "exp3_gcn_spectral"
+model_type: "GCN"
+hidden_dim: 64
+num_layers: 2
+lr: 0.01
+weight_decay: 0.0005
+dropout: 0.5
+epochs: 150
+seed: 999
+tags:
+  architecture: "GCN"
+  purpose: "Spectral convolution architecture comparison run"

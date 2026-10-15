@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MLflow runs & artifacts
+mlruns/
+.mlflow/
+
+# Dataset cache downloads
+data/Cora/
+data/cora/*.pt
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,14 @@
+# Experiment 2: GraphSAGE Tuned Hyperparameters
+experiment_name: "cora_mlops_experiments"
+run_name: "exp2_graphsage_tuned"
+model_type: "GraphSAGE"
+hidden_dim: 128
+num_layers: 2
+lr: 0.005
+weight_decay: 0.0001
+dropout: 0.3
+epochs: 200
+seed: 123
+tags:
+  architecture: "GraphSAGE"
+  purpose: "Tuned higher-capacity model for promotion candidate"
